@@ -50,16 +50,6 @@ Apply clean project structure and separation of concerns
 
 **Git & GitHub**
 
-src/
-│── components/
-│   ├── Header.jsx
-│   ├── ResourceList.jsx
-│   └── ResourceCard.jsx
-│
-│── App.jsx
-│── main.jsx
-│── index.css
-
 ## 🧩 How It Works
 
 Resource data is stored in an array of objects
