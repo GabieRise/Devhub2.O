@@ -1,16 +1,101 @@
-# React + Vite
+🚀 DevHub 2.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DevHub 2.0 is a personal learning platform built with React designed to help new and growing web developers discover, organize, and learn from high-quality development resources.
 
-Currently, two official plugins are available:
+This project focuses on clarity, scalability, and real-world React best practices, making it both a learning tool and a solid portfolio project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**📌 Features**
 
-## React Compiler
+**⚛️ Built with React + Vite**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📚 Curated learning resources for:
 
-## Expanding the ESLint configuration
+HTML
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+CSS
+
+JavaScript
+
+🔍 Category-based filtering using React state
+
+🧩 Reusable component architecture
+
+🎯 Beginner-friendly UI and structure
+
+🚫 No manual DOM manipulation (React-driven rendering)
+
+## 🧠 Learning Goals
+
+DevHub 2.0 was created to:
+
+Practice React fundamentals
+
+Understand state management with useState
+
+Learn how to map and filter data dynamically
+
+Build reusable components like ResourceCard
+
+Apply clean project structure and separation of concerns
+
+## 🛠️ Tech Stack
+
+- **React**
+
+-- **Vite**
+
+-- **JavaScript (ES6+)**
+
+**CSS**
+
+**Git & GitHub**
+
+src/
+│── components/
+│   ├── Header.jsx
+│   ├── ResourceList.jsx
+│   └── ResourceCard.jsx
+│
+│── App.jsx
+│── main.jsx
+│── index.css
+
+## 🧩 How It Works
+
+Resource data is stored in an array of objects
+
+Resources are rendered dynamically using .map()
+
+Filtering is handled through React state:
+
+selectedCategory
+
+UI updates automatically when state changes
+
+
+
+## 🌱 Future Improvements
+
+Search functionality
+
+Difficulty levels (Beginner / Intermediate / Advanced)
+
+Save favorite resources
+
+User authentication
+
+Backend integration
+
+## 🤝 Contributing
+
+This project is currently a personal learning platform, but suggestions and improvements are welcome.
+
+## 📄 License
+
+This project is open-source and available under the MIT License
+
+## ✨🥷🏽 Author
+
+## Gabriel Oisamoje
+Aspiring fullstack Developer
+Learning React & modern web development
