@@ -1,9 +1,13 @@
 function ResourceCard({ title, level, description, resources }) {
   return (
     <article className={`card level ${level}`}>
-      <h3>{title}</h3>
-      <span className="badge">{level}</span>
+      <h2>{title}</h2>
+
       <p>{description}</p>
+
+      <span className="badge">{level}</span>
+      
+      <h3>Resources</h3>
 
       <ul>
         {resources.map((res, index) => (

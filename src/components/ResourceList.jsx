@@ -35,12 +35,12 @@ function ResourceList() {
   ];
 
   return (
-    <>
+    <main>
      <div className="filters">
       <button onClick={() => setSelectedCategory("all")}>All</button>
-      <button onClick={() => setSelectedCategory("html")}>HTML</button>
-      <button onClick={() => setSelectedCategory("css")}>CSS</button>
-      <button onClick={() => setSelectedCategory("javascript")}>JavaScript</button>
+      <button onClick={() => setSelectedCategory("html")}>Beginner</button>
+      <button onClick={() => setSelectedCategory("css")}>Intermediate</button>
+      <button onClick={() => setSelectedCategory("javascript")}>Advanced</button>
     </div> 
     <div className="level-filters">
       <button onClick={() => setSelectedLevel("all")}>All Levels</button>
@@ -72,7 +72,7 @@ function ResourceList() {
     />
   ))}
   </section>
-  </>
+  </main>
   );
 }
 
