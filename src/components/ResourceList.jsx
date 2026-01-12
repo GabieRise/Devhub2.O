@@ -1,53 +1,31 @@
 import { useState } from "react";
+import FilterButtons from "./FilterButtons";
 import ResourceCard from "./ResourceCard";
+import resources from "../data/resources";
+import  "./ResourceList.css";
 
 function ResourceList() {
     const [selectedCategory, setSelectedCategory] = useState("all");
     const [selectedLevel, setSelectedLevel] = useState("all");
-    const resources = [
-    {
-      title: "HTML",
-      level: "Beginner",
-      description: "HTML defines the structure of web pages.",
-      resources: [
-        { name: "MDN HTML Guide", link: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
-        { name: "W3Schools HTML", link: "https://www.w3schools.com/html/" }
-      ]
-    },
-    {
-      title: "CSS",
-      level: "Intermediate",
-      description: "CSS controls layout, colors, and responsiveness.",
-      resources: [
-        { name: "MDN CSS Guide", link: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
-        { name: "CSS-Tricks", link: "https://css-tricks.com/" }
-      ]
-    },
-    {
-      title: "JavaScript",
-      level: "Advanced",
-      description: "JavaScript adds interactivity and logic.",
-      resources: [
-        { name: "MDN JavaScript", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
-        { name: "JavaScript.info", link: "https://javascript.info/" }
-      ]
-    }
-  ];
 
   return (
     <main>
+    <FilterButtons
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+      />
      <div className="filters">
       <button onClick={() => setSelectedCategory("all")}>All</button>
       <button onClick={() => setSelectedCategory("html")}>Beginner</button>
       <button onClick={() => setSelectedCategory("css")}>Intermediate</button>
       <button onClick={() => setSelectedCategory("javascript")}>Advanced</button>
     </div> 
-    <div className="level-filters">
+    {/* <div className="level-filters">
       <button onClick={() => setSelectedLevel("all")}>All Levels</button>
       <button onClick={() => setSelectedLevel("beginner")}>Beginner</button>
       <button onClick={() => setSelectedLevel("intermediate")}>Intermediate</button>
       <button onClick={() => setSelectedLevel("advanced")}>Advanced</button>
-    </div>
+    </div> */}
        <section>
 
       {resources

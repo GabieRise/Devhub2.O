@@ -1,0 +1,39 @@
+/* src/components/ResourceList.css */
+
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.filters button {
+  padding: 8px 16px;
+  border: none;
+  background: #e5e7eb;
+
+  font-weight: 500;
+
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.filters button:hover {
+  background: #d1d5db;
+}
+.filters button.active {
+  background-color: #2563eb;
+  color: white;
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .resource-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

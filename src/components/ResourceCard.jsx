@@ -1,3 +1,5 @@
+import "./ResourceCard.css";
+
 function ResourceCard({ title, level, description, resources }) {
   return (
     <article className={`card level ${level}`}>
