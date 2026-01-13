@@ -1,21 +1,18 @@
-import "./ResourceCard.css";
-
-function ResourceCard({ title, level, description, resources }) {
+function ResourceCard({ title, description, links }) {
   return (
-    <article className={`card level ${level}`}>
-      <h2>{title}</h2>
-
+    <article className="resource-card">
+      <h3>{title}</h3>
       <p>{description}</p>
 
-      <span className="badge">{level}</span>
-      
-      <h3>Resources</h3>
-
       <ul>
-        {resources.map((res, index) => (
+        {links.map((link, index) => (
           <li key={index}>
-            <a href={res.link} target="_blank" rel="noopener noreferrer">
-              {res.name}
+            <a
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {link.name}
             </a>
           </li>
         ))}
