@@ -1,56 +1,47 @@
 import { useState } from "react";
 import ResourceCard from "./ResourceCard";
-import resources from "../data/resources";
+import resourcesData from "../data/resources";
 
 function ResourceList() {
-  const [selectedLevel, setSelectedLevel] = useState("all");
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const filteredResources = resourcesData.filter((item) => {
+    const matchesCategory =
+      selectedCategory === "all" ||
+      item.title.toLowerCase() === selectedCategory;
+
+    const matchesSearch =
+      item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item.description.toLowerCase().includes(searchTerm.toLowerCase());
+
+    return matchesCategory && matchesSearch;
+  });
 
   return (
     <>
+      {/* Search input */}
+      <input
+        type="text"
+        placeholder="Search resources..."
+        className="search-input"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
+
+      {/* Filter buttons */}
       <div className="filters">
-        <button
-          className={selectedLevel === "all" ? "active" : ""}
-          onClick={() => setSelectedLevel("all")}
-        >
-          All
-        </button>
-
-        <button
-          className={selectedLevel === "beginner" ? "active" : ""}
-          onClick={() => setSelectedLevel("beginner")}
-        >
-          Beginner
-        </button>
-
-        <button
-          className={selectedLevel === "intermediate" ? "active" : ""}
-          onClick={() => setSelectedLevel("intermediate")}
-        >
-          Intermediate
-        </button>
-
-        <button
-          className={selectedLevel === "advanced" ? "active" : ""}
-          onClick={() => setSelectedLevel("advanced")}
-        >
-          Advanced
-        </button>
+        <button onClick={() => setSelectedCategory("all")}>All</button>
+        <button onClick={() => setSelectedCategory("html")}>HTML</button>
+        <button onClick={() => setSelectedCategory("css")}>CSS</button>
+        <button onClick={() => setSelectedCategory("javascript")}>JavaScript</button>
       </div>
 
-      <section>
-        {resources
-          .filter(
-            item => selectedLevel === "all" || item.level === selectedLevel
-          )
-          .map((item, index) => (
-            <ResourceCard
-              key={index}
-              title={item.title}
-              description={item.description}
-              level={item.level}
-              resources={item.resources}
-            />
-          ))}
+      {/* Cards */}
+      <section className="grid">
+        {filteredResources.map((item, index) => (
+          <ResourceCard key={index} {...item} />
+        ))}
       </section>
     </>
   );

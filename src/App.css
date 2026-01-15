@@ -30,6 +30,22 @@ body.dark {
   color: #e5e7eb;
 }
 
+/* Search input*/
+.search-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+body.dark .search-input {
+  background: #020617;
+  color: #e5e7eb;
+  border-color: #1e293b;
+}
+
+
 /* Card background */
 article {
   background: white;
