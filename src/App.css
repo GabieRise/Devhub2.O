@@ -11,6 +11,65 @@ body {
   color: #222;
 }
 
+/* Base styles */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light theme */
+body.light {
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* Dark theme */
+body.dark {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+/* Card background */
+article {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  transition: background 0.3s ease;
+}
+
+body.dark article {
+  background: #020617;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+/* Toggle button */
+.theme-toggle {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+body.dark .theme-toggle {
+  background: #1e293b;
+  color: #e5e7eb;
+}
+
+body.light .theme-toggle {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+
 /* App layout */
 .app {
   max-width: 1200px;
@@ -86,6 +145,10 @@ article {
 article:hover {
   transform: translateY(-4px);
   box-shadow: 0 14px 28px rgba(0,0,0,0.08);
+}
+
+body.dark article:hover {
+  background: #020617;
 }
 
 article h2 {

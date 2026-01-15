@@ -1,12 +1,30 @@
-import "./App.css";
+import { useEffect, useState } from "react";
 import ResourceList from "./components/ResourceList";
+import "./App.css";
 
 function App() {
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") || "light"
+  );
+
+  useEffect(() => {
+    document.body.className = theme;
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
   return (
     <div className="app">
-      <header className="header">
+      <header>
         <h1>DevHub</h1>
-        <p>Your personal learning platform for web development</p>
+
+        <button
+          className="theme-toggle"
+          onClick={() =>
+            setTheme(theme === "light" ? "dark" : "light")
+          }
+        >
+          {theme === "light" ? "🌙 Dark Mode" : "☀️ Light Mode"}
+        </button>
       </header>
 
       <ResourceList />
