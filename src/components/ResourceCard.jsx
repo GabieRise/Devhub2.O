@@ -1,14 +1,16 @@
-function ResourceCard({ title, description, links }) {
+function ResourceCard({ title, description, level, resources }) {
   return (
-    <article className="resource-card">
-      <h3>{title}</h3>
+    <article className={`level ${level}`}>
+      <span className="level-badge">{level}</span>
+
+      <h2>{title}</h2>
       <p>{description}</p>
 
       <ul>
-        {links.map((link, index) => (
+        {resources.map((res, index) => (
           <li key={index}>
-            <a href={link.url} target="_blank" rel="noopener noreferrer">
-              {link.name}
+            <a href={res.link} target="_blank" rel="noopener noreferrer">
+              {res.name}
             </a>
           </li>
         ))}
