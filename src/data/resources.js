@@ -5,56 +5,42 @@ const resources = [
     description: "HTML defines the structure of web pages.",
     links: [
       {
-        name: "MDN HTML Guide",
+        name: "MDN HTML",
         url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
       },
       {
         name: "W3Schools HTML",
         url: "https://www.w3schools.com/html/",
       },
-      {
-        name: "freeCodeCamp HTML Course",
-        url: "https://www.freecodecamp.org/learn/",
-      },
     ],
   },
-
   {
     category: "css",
     title: "CSS",
-    description: "CSS controls layout, colors, spacing, and responsiveness.",
+    description: "CSS styles and layouts web pages.",
     links: [
       {
-        name: "MDN CSS Guide",
+        name: "MDN CSS",
         url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
       },
       {
         name: "CSS-Tricks",
         url: "https://css-tricks.com/",
       },
-      {
-        name: "W3Schools CSS",
-        url: "https://www.w3schools.com/css/",
-      },
     ],
   },
-
   {
     category: "javascript",
     title: "JavaScript",
-    description: "JavaScript adds interactivity and logic to web applications.",
+    description: "JavaScript adds logic and interactivity.",
     links: [
       {
-        name: "MDN JavaScript Guide",
+        name: "MDN JavaScript",
         url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       },
       {
         name: "JavaScript.info",
         url: "https://javascript.info/",
-      },
-      {
-        name: "freeCodeCamp JavaScript",
-        url: "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
       },
     ],
   },

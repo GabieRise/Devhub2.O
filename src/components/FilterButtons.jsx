@@ -12,21 +12,21 @@ function FilterButtons({ selectedCategory, setSelectedCategory }) {
         className={selectedCategory === "html" ? "active" : ""}
         onClick={() => setSelectedCategory("html")}
       >
-        All Levels
+        HTML
       </button>
 
       <button
         className={selectedCategory === "css" ? "active" : ""}
         onClick={() => setSelectedCategory("css")}
       >
-        Intermediate
+        CSS
       </button>
 
       <button
         className={selectedCategory === "javascript" ? "active" : ""}
         onClick={() => setSelectedCategory("javascript")}
       >
-        Advanced
+        JavaScript
       </button>
     </div>
   );
