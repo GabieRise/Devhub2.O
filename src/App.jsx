@@ -1,12 +1,12 @@
-import ResourceList from "./components/ResourceList";
 import "./App.css";
+import ResourceList from "./components/ResourceList";
 
 function App() {
   return (
     <div className="app">
-      <header>
+      <header className="header">
         <h1>DevHub</h1>
-        <p>Learn web development step by step</p>
+        <p>Your personal learning platform for web development</p>
       </header>
 
       <ResourceList />
