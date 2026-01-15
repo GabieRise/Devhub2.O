@@ -75,6 +75,7 @@ header {
   font-weight: 600;
 }
 
+
 body.dark .theme-toggle {
   background: #1e293b;
   color: #e5e7eb;
@@ -83,6 +84,11 @@ body.dark .theme-toggle {
 body.light .theme-toggle {
   background: #e5e7eb;
   color: #111827;
+}
+
+.completed {
+  border-left: 6px solid #22c55e;
+  opacity: 0.9;
 }
 
 
@@ -209,4 +215,49 @@ article a:hover {
 .level.advanced .level-badge {
   background: #fee2e2;
   color: #991b1b;
+}
+
+/* Progress */
+.progress {
+  margin-bottom: 24px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #22c55e;
+  transition: width 0.3s ease;
+}
+
+/* Search */
+.search-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Completed card */
+.completed {
+  border-left: 6px solid #22c55e;
+  opacity: 0.9;
 }
