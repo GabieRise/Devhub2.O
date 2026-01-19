@@ -257,8 +257,14 @@ article a:hover {
   }
 }
 
-/* Completed card */
+/* Completed card * 18th jan 2026*/
 .completed {
   border-left: 6px solid #22c55e;
+ 
   opacity: 0.9;
+}
+
+textarea {
+  resize: none;
+  overflow: hidden;
 }
