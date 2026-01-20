@@ -1,34 +1,31 @@
-const resources = [
+const resourcesData = [
   {
     id: "html",
     title: "HTML",
     description: "HTML defines the structure of web pages.",
-    resources: [
-      { name: "MDN HTML", link: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
-      { name: "W3Schools HTML", link: "https://www.w3schools.com/html/"},
-      { name: "HTML.com", link: "https://html.com/" }
+    links: [
+      { name: "MDN HTML", url: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+      { name: "W3Schools HTML", url: "https://www.w3schools.com/html/" }
     ]
   },
   {
     id: "css",
     title: "CSS",
-    description: "CSS controls layout and styling.",
-    resources: [
-      { name: "CSS-Tricks", link: "https://css-tricks.com/" },
-      { name: "MDN CSS", link: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
-      { name: "W3Schools CSS", link: "https://www.w3schools.com/css/" }
+    description: "CSS controls layout, colors, and responsiveness.",
+    links: [
+      { name: "MDN CSS", url: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+      { name: "CSS-Tricks", url: "https://css-tricks.com/" }
     ]
   },
-    {
+  {
     id: "javascript",
     title: "JavaScript",
-    description: "JavaScript adds logic and interactivity.",
-    resources: [
-      { name: "MDN JavaScript", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
-        { name: "JavaScript.info", link: "https://javascript.info/" },
-        { name: "Eloquent JavaScript", link: "https://eloquentjavascript.net/" }
+    description: "JavaScript adds interactivity and logic.",
+    links: [
+      { name: "MDN JS", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+      { name: "JavaScript.info", url: "https://javascript.info/" }
     ]
   }
 ];
 
-export default resources;
+export default resourcesData;
