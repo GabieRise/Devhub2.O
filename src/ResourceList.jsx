@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import ResourceList from "./ResourceList.jsx";
-// import { resourcesData } from "./resources.js";
+import  resourcesData from "..src/data/resources.js";
 import "./App.css";
 
 function App() {
@@ -34,4 +33,4 @@ function App() {
   );
 }
 
-export default App;
+export default ResourceList;
