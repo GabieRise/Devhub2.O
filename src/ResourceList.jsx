@@ -1,36 +1,29 @@
-import { useState, useEffect } from "react";
-import  resourcesData from "..src/data/resources.js";
+import ResourceCard from "./ResourceCard";
 import "./App.css";
 
-function App() {
-  const [selectedCategory, setSelectedCategory] = useState("all");
-  const [notes, setNotes] = useState(() => {
-    return JSON.parse(localStorage.getItem("notes")) || {};
-  });
-
-  useEffect(() => {
-    localStorage.setItem("notes", JSON.stringify(notes));
-  }, [notes]);
+function ResourceList({ resources, selectedCategory, setSelectedCategory, notes, setNotes }) {
+  const filteredResources =
+    selectedCategory === "all"
+      ? resources
+      : resources.filter(
+          resource => resource.category === selectedCategory
+        );
 
   return (
-    <main>
-      <h1>DevHub</h1>
 
-      <div className="filters">
-        <button onClick={() => setSelectedCategory("all")}>All</button>
-        <button onClick={() => setSelectedCategory("html")}>HTML</button>
-        <button onClick={() => setSelectedCategory("css")}>CSS</button>
-        <button onClick={() => setSelectedCategory("javascript")}>JavaScript</button>
-      </div>
-
-      <ResourceList
-        resources={resourcesData}
-        selectedCategory={selectedCategory}
-        notes={notes}
-        setNotes={setNotes}
-      />
-    </main>
+      <section className="cards">
+        {filteredResources.map(resource => (
+          <ResourceCard
+            key={resource.id}
+            resource={resource}
+            notes={notes}
+            setNotes={setNotes}
+          />
+        ))}
+      </section>
+    
   );
 }
 
 export default ResourceList;
+

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import ResourceList from "./ResourceList.jsx";
-// import { resourcesData } from "./resources.js";
+import resourcesData from "./data/resources.js";
 import "./App.css";
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
     localStorage.setItem("notes", JSON.stringify(notes));
   }, [notes]);
 
+  console.log("App rendered");
   return (
     <main>
       <h1>DevHub</h1>
@@ -27,6 +28,7 @@ function App() {
       <ResourceList
         resources={resourcesData}
         selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
         notes={notes}
         setNotes={setNotes}
       />
