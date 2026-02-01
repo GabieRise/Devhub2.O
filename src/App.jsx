@@ -17,7 +17,7 @@ function App() {
   return (
     <main>
       <h1>DevHub</h1>
-
+      <p>Welcome to DevHub a learning platform for Tech enthusiasts</p>
       <div className="filters">
         <button onClick={() => setSelectedCategory("all")}>All</button>
         <button onClick={() => setSelectedCategory("html")}>HTML</button>
