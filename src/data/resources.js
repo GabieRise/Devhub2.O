@@ -12,7 +12,7 @@ const resourcesData = [
   {
     id: "css",
     title: "CSS",
-    description: "CSS controls layout, colors, and responsiveness. It is the basically the design part of webpages.",
+    description: "CSS controls layout, colors, and responsiveness. It is basically the design part of webpages.",
     links: [
       { name: "MDN CSS", url: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
       { name: "CSS-Tricks", url: "https://css-tricks.com/" },
@@ -22,7 +22,7 @@ const resourcesData = [
   {
     id: "javascript",
     title: "JavaScript",
-    description: "JavaScript adds interactivity and logic. Simply put it adds functionality to your webpages.",
+    description: "JavaScript adds interactivity and logic. Simply put; it adds functionality to your webpages.",
     links: [
       { name: "MDN JS", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
       { name: "JavaScript.info", url: "https://javascript.info/" },
