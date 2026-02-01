@@ -2,7 +2,7 @@ const resourcesData = [
   {
     id: "html",
     title: "HTML",
-    description: "HTML defines the structure of web pages.",
+    description: "HTML is the foundation of web pages, it defines the structure of web pages.",
     links: [
       { name: "MDN HTML", url: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
       { name: "W3Schools HTML", url: "https://www.w3schools.com/html/" },
@@ -12,7 +12,7 @@ const resourcesData = [
   {
     id: "css",
     title: "CSS",
-    description: "CSS controls layout, colors, and responsiveness.",
+    description: "CSS controls layout, colors, and responsiveness. It is the basically the design part of webpages",
     links: [
       { name: "MDN CSS", url: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
       { name: "CSS-Tricks", url: "https://css-tricks.com/" },
