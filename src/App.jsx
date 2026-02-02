@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import ResourceList from "./ResourceList.jsx";
 import resourcesData from "./data/resources.js";
+import FilterButtons from "./components/FilterButtons.jsx";
 import "./App.css";
 
 function App() {
@@ -18,13 +19,13 @@ function App() {
     <main>
       <h1>DevHub</h1>
       <p>Welcome to DevHub a learning platform for Tech enthusiasts</p>
-      <div className="filters">
+      {/* <div className="filters">
         <button onClick={() => setSelectedCategory("all")}>All</button>
         <button onClick={() => setSelectedCategory("html")}>HTML</button>
         <button onClick={() => setSelectedCategory("css")}>CSS</button>
         <button onClick={() => setSelectedCategory("javascript")}>JavaScript</button>
-      </div>
-
+      </div> */}
+      <FilterButtons/>
       <ResourceList
         resources={resourcesData}
         selectedCategory={selectedCategory}
@@ -32,6 +33,7 @@ function App() {
         notes={notes}
         setNotes={setNotes}
       />
+      
     </main>
   );
 }
