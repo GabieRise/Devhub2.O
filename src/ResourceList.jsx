@@ -1,7 +1,7 @@
 import ResourceCard from "./ResourceCard";
 import "./App.css";
 
-function ResourceList({ resources, selectedCategory, setSelectedCategory, notes, setNotes }) {
+function ResourceList({ resources, selectedCategory, notes, setNotes }) {
   const filteredResources =
     selectedCategory === "all"
       ? resources
