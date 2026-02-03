@@ -149,12 +149,6 @@ section {
   gap: 20px;
 }
 
-@media (min-width: 768px) {
-  section {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 /* Resource cards */
 article {
   background: white;
@@ -250,7 +244,7 @@ article a:hover {
   display: grid;
   gap: 24px;
 }
-
+/* Mobile view */
 @media (min-width: 768px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
