@@ -1,5 +1,5 @@
 function ResourceCard({ resource, notes, setNotes }) {
-  const MAX_CHARS = 200;
+  const MAX_CHARS = 1000;
 
   // ✅ CRITICAL FIX
   const note = notes[resource.id] || "";
