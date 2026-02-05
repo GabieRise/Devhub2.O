@@ -15,6 +15,16 @@ function App() {
   }, [notes]);
 
   console.log("App rendered");
+  const totalResources = resourcesData.length;
+
+  const completedResources = Object.values(notes).filter(
+  note => note.trim() !== ""
+  ).length;
+
+  const progressPercent = totalResources === 0
+  ? 0
+  : (completedResources / totalResources) * 100;
+
   return (
     <main>
       <h1>DevHub</h1>
@@ -26,6 +36,16 @@ function App() {
         <button onClick={() => setSelectedCategory("javascript")}>JavaScript</button>
       </div> */}
       <FilterButtons/>
+      <div className="progress-wrapper"></div>
+      <p className="progress-text">
+        Progress: {completedResources} / {totalResources} 
+      </p>
+      <div className="progress-bar">
+        <div 
+        className="progress-fill" 
+        style={{width: `${progressPercent}%` }}>
+        </div>
+       </div>
       <ResourceList
         resources={resourcesData}
         selectedCategory={selectedCategory}
