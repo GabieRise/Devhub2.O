@@ -1,5 +1,5 @@
 import ResourceCard from "./ResourceCard";
-import "./App.css";
+// import "./App.css";
 
 function ResourceList({ resources, selectedCategory, notes, setNotes }) {
   const filteredResources =
