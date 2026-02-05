@@ -29,13 +29,13 @@ function App() {
     <main>
       <h1>DevHub</h1>
       <p>Welcome to DevHub a learning platform for Tech enthusiasts</p>
-      {/* <div className="filters">
+      <div className="filters">
         <button onClick={() => setSelectedCategory("all")}>All</button>
         <button onClick={() => setSelectedCategory("html")}>HTML</button>
         <button onClick={() => setSelectedCategory("css")}>CSS</button>
         <button onClick={() => setSelectedCategory("javascript")}>JavaScript</button>
-      </div> */}
-      <FilterButtons/>
+      </div>
+      {/* <FilterButtons/> */}
       <div className="progress-wrapper"></div>
       <p className="progress-text">
         Progress: {completedResources} / {totalResources} 
