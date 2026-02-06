@@ -46,6 +46,7 @@ function App() {
         style={{width: `${progressPercent}%` }}>
         </div>
        </div>
+       {/* Resourcelist */}
       <ResourceList
         resources={resourcesData}
         selectedCategory={selectedCategory}
