@@ -28,6 +28,12 @@ function FilterButtons({ selectedCategory, setSelectedCategory }) {
       >
         JavaScript
       </button>
+      <button
+        className={selectedCategory === "React" ? "active" : ""}
+        onClick={() => setSelectedCategory("React")}
+      >
+        React
+      </button>
     </div>
   );
 }

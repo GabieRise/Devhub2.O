@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     localStorage.setItem("notes", JSON.stringify(notes));
   }, [notes]);
-
+ 
   console.log("App rendered");
   const totalResources = resourcesData.length;
 
@@ -34,6 +34,7 @@ function App() {
         <button onClick={() => setSelectedCategory("html")}>HTML</button>
         <button onClick={() => setSelectedCategory("css")}>CSS</button>
         <button onClick={() => setSelectedCategory("javascript")}>JavaScript</button>
+        <button onClick={() => setSelectedCategory("React")}>React</button>
       </div>
       {/* <FilterButtons/> */}
       <div className="progress-wrapper"></div>

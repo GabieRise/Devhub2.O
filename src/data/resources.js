@@ -31,6 +31,17 @@ const resourcesData = [
       { name: "JavaScript.info", url: "https://javascript.info/" },
       {name: "W3Schools JavaScript Turorial", url: "https://www.w3schools.com/js/"}
     ]
+  },
+  {
+    id: "React",
+    title: "React",
+    category: "React",
+    description: "React is part of JavaScript and It helps make your UI and functionality seemless.",
+    links: [
+      {name: "W3Schools React Tutorial", url: "https://w3schools.com/react/"},
+      {name: "W3Schools React Tutorial", url: "https://w3schools.com/react/"},
+      {name: "W3Schools React Tutorial", url: "https://w3schools.com/react/"}
+    ]
   }
 ];
 
