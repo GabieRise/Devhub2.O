@@ -3,7 +3,7 @@ const resourcesData = [
     id: "html",
     title: "HTML",
     category: "html",
-    description: "HTML is the foundation of web pages, it defines the structure of web pages.",
+    description: "Hypertext Markup Language (HTML) is the standard markup language used to create structure and content of web pages.",
     links: [
       { name: "MDN HTML", url: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
       { name: "W3Schools HTML", url: "https://www.w3schools.com/html/" },
@@ -14,7 +14,7 @@ const resourcesData = [
     id: "css",
     title: "CSS",
     category: "css",
-    description: "CSS controls layout, colors, and responsiveness. It is basically the design part of webpages.",
+    description: "Cascading Style Sheet (CSS) is a styling language used to control the layout, visual appearance and responsiveness of web pages.",
     links: [
       { name: "MDN CSS", url: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
       { name: "CSS-Tricks", url: "https://css-tricks.com/" },
@@ -25,7 +25,7 @@ const resourcesData = [
     id: "javascript",
     title: "JavaScript",
     category: "javascript",
-    description: "JavaScript adds interactivity and logic. Simply put; it adds functionality to your webpages.",
+    description: "JavaScript is a programming language that adds interactivity to websites, makimg them dynamic and responsive.",
     links: [
       { name: "MDN JS", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
       { name: "JavaScript.info", url: "https://javascript.info/" },
@@ -36,7 +36,7 @@ const resourcesData = [
     id: "React",
     title: "React",
     category: "React",
-    description: "React is part of JavaScript and It helps make your UI and functionality seemless.",
+    description: "React is a JavaScript Library for building user interface and is used for developing complex, interactive web and mobile Applications.",
     links: [
       {name: "W3Schools React Tutorial", url: "https://w3schools.com/react/"},
       {name: "W3Schools React Tutorial", url: "https://w3schools.com/react/"},
