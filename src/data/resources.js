@@ -42,6 +42,17 @@ const resourcesData = [
       {name: "W3Schools React Tutorial", url: "https://w3schools.com/react/"},
       {name: "W3Schools React Tutorial", url: "https://w3schools.com/react/"}
     ]
+  },
+  {
+    id: "PHP",
+    title: "PHP",
+    category: "PHP",
+    description: "PHP is a server-side scripting language used for web development, often used for building dynamic websites,APIs and backend services.",
+    links: [
+      {name: "W3Schools PHP Tutorial", url: "https://w3schools.com/Php/"},
+      {name: "W3Schools PHP Tutorial", url: "https://w3schools.com/Php/"},
+      {name: "W3Schools PHP Tutorial", url: "https://w3schools.com/Php/"}
+    ]
   }
 ];
 
