@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import ResourceList from "./ResourceList.jsx";
 import resourcesData from "./data/resources.js";
-import FilterButtons from "./components/FilterButtons.jsx";
 import "./App.css";
 
 function App() {
@@ -10,11 +9,22 @@ function App() {
     return JSON.parse(localStorage.getItem("notes")) || {};
   });
 
+  //new theme state
+  const [darkMode, setDarkMode] = useState(() => {
+    return JSON.parse(localStorage.getItem("darkMode")) || "false";
+  });
+
+  //save notes and theme to local storage
   useEffect(() => {
     localStorage.setItem("notes", JSON.stringify(notes));
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
   }, [notes]);
+
+  const toggleTheme = () => {
+    setDarkMode(prevMode => !prevMode);
+  }
  
-  console.log("App rendered");
+  // console.log("App rendered");
   const totalResources = resourcesData.length;
 
   const completedResources = Object.values(notes).filter(
@@ -28,6 +38,9 @@ function App() {
   return (
     <main>
       <h1>DevHub</h1>
+      <button onClick={toggleTheme}>
+        {darkMode ? "Light Mode" : "Dark Mode"}
+      </button>
       <p>Welcome to DevHub a learning platform for Tech enthusiasts</p>
       <div className="filters">
         <button onClick={() => setSelectedCategory("all")}>All</button>

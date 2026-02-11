@@ -60,7 +60,7 @@ header {
 }
 
 /* Toggle button */
-.theme-toggle {
+.toggleTheme {
   border: none;
   padding: 8px 12px;
   border-radius: 8px;
@@ -69,12 +69,12 @@ header {
 }
 
 
-body.dark .theme-toggle {
+body.dark .toggleTheme {
   background: #1e293b;
   color: #e5e7eb;
 }
 
-body.light .theme-toggle {
+body.light .toggleTheme {
   background: #e5e7eb;
   color: #111827;
 }
