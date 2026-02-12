@@ -39,8 +39,8 @@ const resourcesData = [
     description: "React is a JavaScript Library for building user interface and is used for developing complex, interactive web and mobile Applications.",
     links: [
       {name: "W3Schools React Tutorial", url: "https://w3schools.com/react/"},
-      // {name: "W3Schools React Tutorial", url: "https://w3schools.com/react/"},
-      // {name: "W3Schools React Tutorial", url: "https://w3schools.com/react/"}
+      {name: "TutorialsPoint React Tutorial", url: "https://www.tutorialspoint.com/reactjs/index.htm"},
+      {name: "Codecademy React Tutorial", url: "https://www.codecademy.com/catalog/language/react"}
     ]
   },
   {
