@@ -50,8 +50,8 @@ const resourcesData = [
     description: "PHP is a server-side scripting language used for web development, often used for building dynamic websites,APIs and backend services.",
     links: [
       {name: "W3Schools PHP Tutorial", url: "https://w3schools.com/Php/"},
-      // {name: "W3Schools PHP Tutorial", url: "https://w3schools.com/Php/"},
-      // {name: "W3Schools PHP Tutorial", url: "https://w3schools.com/Php/"}
+      {name: "Codecademy PHP Tutorial", url: "https://www.codecademy.com/catalog/language/php"},
+      {name: "TutorialsPoint PHP Tutorial", url: "https://www.tutorialspoint.com/php/index.htm"}
     ]
   }
 ];
