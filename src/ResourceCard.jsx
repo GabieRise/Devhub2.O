@@ -1,3 +1,5 @@
+import CodeEditor from "./components/codeEditor";
+
 function ResourceCard({ resource, notes, setNotes }) {
   const MAX_CHARS = 1000;
 
@@ -15,6 +17,8 @@ function ResourceCard({ resource, notes, setNotes }) {
     <article className="card">
       <h2>{resource.title}</h2>
       <p>{resource.description}</p>
+
+      <CodeEditor initialCode={resource.exampleCode || ""} />
 
       <ul>
         {resource.links.map(link => (
