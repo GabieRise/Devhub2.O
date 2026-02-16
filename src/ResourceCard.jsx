@@ -18,7 +18,7 @@ function ResourceCard({ resource, notes, setNotes }) {
       <h2>{resource.title}</h2>
       <p>{resource.description}</p>
 
-      <CodeEditor initialCode={resource.exampleCode || ""} />
+      <CodeEditor />
 
       <ul>
         {resource.links.map(link => (
