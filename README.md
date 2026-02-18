@@ -92,6 +92,6 @@ This project is open-source and available under the MIT License
 
 ## ✨🥷🏽 Author
 
-## Gabriel Oisamoje
+## Gabie Rise
 Aspiring fullstack Developer
 Learning React & modern web development

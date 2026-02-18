@@ -26,4 +26,3 @@ function ResourceList({ resources, selectedCategory, notes, setNotes }) {
 }
 
 export default ResourceList;
-
