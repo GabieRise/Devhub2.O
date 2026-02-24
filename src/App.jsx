@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import ResourceList from "./ResourceList.jsx";
 import resourcesData from "./data/resources.js";
 import "./App.css";
+import Header from "./components/Header.jsx";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -48,6 +49,7 @@ function App() {
         <button onClick={() => setSelectedCategory("css")}>CSS</button>
         <button onClick={() => setSelectedCategory("javascript")}>JavaScript</button>
         <button onClick={() => setSelectedCategory("React")}>React</button>
+        <button onClick={() => setSelectedCategory("PHP")}>PHP</button>
       </div>
       {/* <FilterButtons/> */}
       <div className="progress-wrapper"></div>
