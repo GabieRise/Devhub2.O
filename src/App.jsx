@@ -38,9 +38,9 @@ function App() {
   return (
     <main>
       <h1>DevHub</h1>
-      <button onClick={toggleTheme}>
+      {/* <button onClick={toggleTheme}>
         {darkMode ? "Light Mode" : "Dark Mode"}
-      </button>
+      </button> */}
       <p>Welcome to DevHub a learning platform for Tech enthusiasts</p>
       <div className="filters">
         <button onClick={() => setSelectedCategory("all")}>All</button>
